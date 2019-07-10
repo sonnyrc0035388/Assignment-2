@@ -24,7 +24,13 @@ namespace Assignment_2
 
         private void tabPage1_Click(object sender, EventArgs e)
         {
+            double resistor1 = double.Parse(textBox1.Text);
+            double resistor2 = double.Parse(textBox2.Text);
+            double resistor3 = double.Parse(textBox3.Text);
+            double resistor4 = double.Parse(textBox4.Text);
 
+            double TotalResistance = resistor1 + resistor2 + resistor3 + resistor4;
+            MessageBox.Show("Total resistance =" + TotalResistance.ToString("0.00") + "ohms");
         }
     }
 }
