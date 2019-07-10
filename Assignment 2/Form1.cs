@@ -37,5 +37,30 @@ namespace Assignment_2
             MessageBox.Show("Total resistance =" + TotalResistance.ToString("0.00") + "ohms");
 
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            double PResistor1 = double.Parse(textBox5.Text);
+            double PResistor2 = double.Parse(textBox6.Text);
+            double PResistor3 = double.Parse(textBox7.Text);
+            double PRsistor4 = double.Parse(textBox8.Text);
+
+
+        }
     }
 }
