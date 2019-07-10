@@ -12,6 +12,9 @@ namespace Assignment_2
 {
     public partial class Form1 : Form
     {
+        public double PResistor4 { get; private set; }
+        public object TotalResistance { get; private set; }
+
         public Form1()
         {
             InitializeComponent();
@@ -58,9 +61,10 @@ namespace Assignment_2
             double PResistor1 = double.Parse(textBox5.Text);
             double PResistor2 = double.Parse(textBox6.Text);
             double PResistor3 = double.Parse(textBox7.Text);
-            double PRsistor4 = double.Parse(textBox8.Text);
+            double PResistor4 = double.Parse(textBox8.Text);
 
-
+            double TotalParallel = 1.0 / (1.0 / PResistor1 + 1.0 /PResistor2 + 1.0 /PResistor3 + 1.0 /PResistor4);
+            MessageBox.Show("Total parellel =" + TotalParallel.ToString("0.00") + "ohms");
         }
     }
 }
